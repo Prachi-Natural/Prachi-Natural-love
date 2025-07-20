@@ -8,16 +8,14 @@
 </head>
 <body>
   <header>
-    <a href="#" onclick="showSection('home')">
-      <img src="logo.png" alt="Natural Love Logo" class="logo" />
-    </a>
+    <img src="logo.png" alt="Natural Love Logo" class="logo" onclick="openLogoPopup()" />
     <nav>
       <ul>
-        <li><a href="#" onclick="showSection('home')"> Home</a></li>
-        <li><a href="#" onclick="showSection('products')">/  Product</a></li>
-        <li><a href="#" onclick="showSection('help')"> /   Help</a></li>
-        <li><a href="#" onclick="showSection('company')">/   Company</a></li>
-        <li><a href="#" onclick="showSection('order')">/   Order</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">/ Products</a></li>
+        <li><a href="#order">/ Order</a></li>
+        <li><a href="#help">/ Help</a></li>
+        <li><a href="#company">/ Company</a></li>
       </ul>
     </nav>
   </header>
@@ -25,8 +23,8 @@
   <section id="home">
     <div id="hero">
       <div>
-        <h1>प्राकृतिक सुंदर्या का उपहार</h1>
-        <p>Natural Love ब्रांड – शुद्ध आयुर्वेदिक सुंदर्या</p>
+        <h1>प्राकृतिक सुंदरता का उपहार</h1>
+        <p>Natural Love ब्रांड – शुद्ध आयुर्वेदिक सुंदरता</p>
         <a href="#order" class="btn">ऑर्डर करें</a>
       </div>
       <img src="product1.png" alt="Main Product Image">
@@ -34,7 +32,7 @@
   </section>
 
   <section id="products">
-    <h2>products</h2>
+    <h2>Products</h2>
     <div class="product-grid">
       <div class="product-card">
         <img src="product1.png" alt="Product 1" width="200">
@@ -45,7 +43,7 @@
       <div class="product-card">
         <img src="product2.png" alt="Product 2" width="200">
         <h3>चंदन फेस क्रीम</h3>
-        <p>शांति और सुंदर्यता</p>
+        <p>शांति और सुंदरता</p>
         <a href="#order" class="btn">ऑर्डर करें</a>
       </div>
       <div class="product-card">
@@ -57,40 +55,13 @@
     </div>
   </section>
 
-  <section id="gallery">
-    <h2>Instagram gallery</h2>
-    <div class="product-grid">
-      <img src="insta1.jpeg" alt="Instagram 1">
-      <img src="insta2.jpeg" alt="Instagram 2">
-      <img src="insta3.jpeg" alt="Instagram 3">
-      <img src="insta4.jpeg" alt="Instagram 4">
-    </div>
-    <p>हमारे Instagram पेज पर जाएं: <a href="https://instagram.com/prachinatural" target="_blank">@prachinatural</a></p>
-  </section>
-
-  <section id="help">
-    <h2>help</h2>
-    <p><strong>Owner:</strong> Yash Bairagi– 📞 7470716608, 📧 bairagiyashbairagi@gmail.com</p>
-    <p><strong>Deputy Manager:</strong> Virendra Rajput – 📞 8461085559</p>
-    <p><strong>Assistant Manager:</strong> Nakul – 📞 9516626389</p>
-  </section>
-
-  <section id="company">
-    <h2>कंपनी जानकारी</h2>
-    <p>ब्रांड: <strong>Natural Love</strong> | कंपनी: <strong>Prachi</strong><br>
-    प्राचीन आयुर्वेदिक जड़ी-बूटियों से बना हर प्रोडक्ट 100% प्राकृतिक और सुरक्षित है।<br>
-    🌙 Dark Theme वर्जन<br>
-    🎨 Packaging आधारित रंग योजना (Herbal Green + Cream Sand)<br>
-    🛍️ Product descriptions और images आप बदल सकते हैं।</p>
-  </section>
-
   <section id="order">
-    <h2>ऑर्डर करें</h2>
+    <h2>Order now</h2>
     <form onsubmit="sendWhatsApp(); return false;">
-      <label>Name:<br><input type="text" id="name" required></label><br><br>
-      <label>Moblie No:<br><input type="text" id="mobile" required></label><br><br>
-      <label>Address:<br><textarea id="address" required></textarea></label><br><br>
-      <label>Product:<br>
+      <label>नाम:<br><input type="text" id="name" required></label><br><br>
+      <label>मोबाइल नंबर:<br><input type="text" id="mobile" required></label><br><br>
+      <label>पूरा पता:<br><textarea id="address" required></textarea></label><br><br>
+      <label>प्रोडक्ट चुनें:<br>
         <select id="product">
           <option value="हल्दी फेस क्रीम">हल्दी फेस क्रीम</option>
           <option value="चंदन फेस क्रीम">चंदन फेस क्रीम</option>
@@ -109,14 +80,25 @@
     </form>
   </section>
 
+  <section id="help">
+    <h2>Help</h2>
+    <p><strong>Owner:</strong> Yash Bairagi– 📞 7470716608, 📧 bairagiyashbairagi@gmail.com</p>
+    <p><strong>Deputy Manager:</strong> Virendra Rajput – 📞 8461085559</p>
+    <p><strong>Assistant Manager:</strong> Nakul – 📞 9516626389</p>
+  </section>
+
+  <section id="company">
+    <h2>Company Details</h2>
+    <p>ब्रांड: <strong>Natural Love</strong> | कंपनी: <strong>Prachi</strong><br>
+    प्राचीन आयुर्वेदिक जड़ी-बूटियों से बना हर प्रोडक्ट 100% प्राकृतिक और सुरक्षित है।<br>
+    🌙 Dark Theme वर्जन<br>
+    🎨 Packaging आधारित रंग योजना (Herbal Green + Cream Sand)<br>
+    🛍️ Product descriptions और images आप बदल सकते हैं।</p>
+  </section>
+
   <footer>
     <p>&copy; 2025 Prachi – Natural Love. सभी अधिकार सुरक्षित।</p>
   </footer>
-
-  <div id="logoPopup" class="popup">
-    <span class="close" onclick="closeLogoPopup()">×</span>
-    <img class="popup-content" src="logo.png" alt="Prachi Logo">
-  </div>
 
   <script>
     function sendWhatsApp() {
@@ -125,37 +107,29 @@
       const address = document.getElementById("address").value;
       const product = document.getElementById("product").value;
       const payment = document.getElementById("payment").value;
+
       const message = `नाम: ${name}\nमोबाइल: ${mobile}\nपता: ${address}\nप्रोडक्ट: ${product}\nपेमेंट: ${payment}`;
-      const url = `https://wa.me/917470716608?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/919516626389?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
 
-    function showSection(id) {
-      const sections = document.querySelectorAll("section");
-      sections.forEach(section => {
-        section.style.display = (section.id === id) ? "block" : "none";
-      });
-    }
-
-    function closeLogoPopup() {
-      document.getElementById("logoPopup").style.display = "none";
-    }
-
-    // Logo click event (optional)
-    document.querySelector(".logo").addEventListener("click", function () {
-      document.getElementById("logoPopup").style.display = "block";
-    });
-
-    // Close popup on outside click
-    window.onclick = function(event) {
-      const popup = document.getElementById("logoPopup");
-      if (event.target == popup) {
-        popup.style.display = "none";
-      }
-    }
-
-    window.onload = () => {
-      showSection("home");
+    function openLogoPopup() {
+      const img = document.createElement('img');
+      img.src = 'logo.png';
+      img.style.width = '300px';
+      img.style.display = 'block';
+      img.style.margin = '50px auto';
+      const div = document.createElement('div');
+      div.style.position = 'fixed';
+      div.style.top = 0;
+      div.style.left = 0;
+      div.style.width = '100%';
+      div.style.height = '100%';
+      div.style.backgroundColor = 'rgba(0,0,0,0.8)';
+      div.style.zIndex = 9999;
+      div.appendChild(img);
+      div.onclick = () => document.body.removeChild(div);
+      document.body.appendChild(div);
     }
   </script>
 </body>
