@@ -5,146 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prachi – Natural Love</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background-color: #1e1e1e;
-      color: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header img.logo {
-      height: 55px;
-      border-radius: 10px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      transition: all 0.6s ease-in-out;
-    }
-    #hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      animation: fadeIn 1s ease-in;
-    }
-    #hero img {
-      width: 300px;
-      max-width: 100%;
-      animation: slideInRight 1.2s ease-out;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #3b8d57;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 10px;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background-color: #58b378;
-    }
-    .product-card {
-      border: 1px solid #3b8d57;
-      border-radius: 10px;
-      padding: 15px;
-      margin: 10px;
-      width: 250px;
-      text-align: center;
-      background-color: #1c1c1c;
-      transition: transform 0.3s;
-    }
-    .product-card:hover {
-      transform: scale(1.05);
-    }
-    .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    footer {
-      text-align: center;
-      background-color: #1e1e1e;
-      color: white;
-      padding: 20px;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      background-color: #222;
-      color: #fff;
-      border: 1px solid #3b8d57;
-      border-radius: 4px;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideInRight {
-      from { transform: translateX(100px); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-    @media (max-width: 768px) {
-      #hero {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .product-card {
-        width: 90%;
-      }
-    }
-    #gallery img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin: 10px;
-      transition: transform 0.3s;
-    }
-    #gallery img:hover {
-      transform: scale(1.05);
-    }
-  </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Natural Love Logo" class="logo" />
+    <a href="#" onclick="showSection('home')">
+      <img src="logo.png" alt="Natural Love Logo" class="logo" />
+    </a>
     <nav>
       <ul>
-        <li><a href="#home">होम</a></li>
-        <li><a href="#products">प्रोडक्ट्स</a></li>
-        <li><a href="#help">हेल्प</a></li>
-        <li><a href="#company">कंपनी</a></li>
-        <li><a href="#order">ऑर्डर</a></li>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('products')">Product</a></li>
+        <li><a href="#" onclick="showSection('help')">Help</a></li>
+        <li><a href="#" onclick="showSection('company')">Company</a></li>
+        <li><a href="#" onclick="showSection('order')">Order</a></li>
       </ul>
     </nav>
   </header>
@@ -152,8 +25,8 @@
   <section id="home">
     <div id="hero">
       <div>
-        <h1>प्राकृतिक सुंदरता का उपहार</h1>
-        <p>Natural Love ब्रांड – शुद्ध आयुर्वेदिक सुंदरता</p>
+        <h1>प्राकृतिक सुंदर्या का उपहार</h1>
+        <p>Natural Love ब्रांड – शुद्ध आयुर्वेदिक सुंदर्या</p>
         <a href="#order" class="btn">ऑर्डर करें</a>
       </div>
       <img src="product1.png" alt="Main Product Image">
@@ -161,7 +34,7 @@
   </section>
 
   <section id="products">
-    <h2>हमारे उत्पाद</h2>
+    <h2>products</h2>
     <div class="product-grid">
       <div class="product-card">
         <img src="product1.png" alt="Product 1" width="200">
@@ -172,7 +45,7 @@
       <div class="product-card">
         <img src="product2.png" alt="Product 2" width="200">
         <h3>चंदन फेस क्रीम</h3>
-        <p>शांति और सुंदरता</p>
+        <p>शांति और सुंदर्यता</p>
         <a href="#order" class="btn">ऑर्डर करें</a>
       </div>
       <div class="product-card">
@@ -185,7 +58,7 @@
   </section>
 
   <section id="gallery">
-    <h2>Instagram गैलरी</h2>
+    <h2>Instagram gallery</h2>
     <div class="product-grid">
       <img src="insta1.jpeg" alt="Instagram 1">
       <img src="insta2.jpeg" alt="Instagram 2">
@@ -196,7 +69,7 @@
   </section>
 
   <section id="help">
-    <h2>सहायता</h2>
+    <h2>help</h2>
     <p><strong>Owner:</strong> Yash Bairagi– 📞 7470716608, 📧 bairagiyashbairagi@gmail.com</p>
     <p><strong>Deputy Manager:</strong> Virendra Rajput – 📞 8461085559</p>
     <p><strong>Assistant Manager:</strong> Nakul – 📞 9516626389</p>
@@ -205,7 +78,7 @@
   <section id="company">
     <h2>कंपनी जानकारी</h2>
     <p>ब्रांड: <strong>Natural Love</strong> | कंपनी: <strong>Prachi</strong><br>
-    प्राचीन आयुर्वेदिक जड़ी-बूटियों से बना हर प्रोडक्ट 100% प्राकृतिक और सुरक्षित है।<br>
+    प्राचीन आयुर्वेदिक जड़ी-बूटियों से बना हर प्रोडक्ट 100% प्राकृतिक और सुरक्षित है।<br>
     🌙 Dark Theme वर्जन<br>
     🎨 Packaging आधारित रंग योजना (Herbal Green + Cream Sand)<br>
     🛍️ Product descriptions और images आप बदल सकते हैं।</p>
@@ -240,6 +113,11 @@
     <p>&copy; 2025 Prachi – Natural Love. सभी अधिकार सुरक्षित।</p>
   </footer>
 
+  <div id="logoPopup" class="popup">
+    <span class="close" onclick="closeLogoPopup()">×</span>
+    <img class="popup-content" src="logo.png" alt="Prachi Logo">
+  </div>
+
   <script>
     function sendWhatsApp() {
       const name = document.getElementById("name").value;
@@ -247,10 +125,37 @@
       const address = document.getElementById("address").value;
       const product = document.getElementById("product").value;
       const payment = document.getElementById("payment").value;
-
       const message = `नाम: ${name}\nमोबाइल: ${mobile}\nपता: ${address}\nप्रोडक्ट: ${product}\nपेमेंट: ${payment}`;
-      const url = `https://wa.me/919516626389?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/917470716608?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
+    }
+
+    function showSection(id) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => {
+        section.style.display = (section.id === id) ? "block" : "none";
+      });
+    }
+
+    function closeLogoPopup() {
+      document.getElementById("logoPopup").style.display = "none";
+    }
+
+    // Logo click event (optional)
+    document.querySelector(".logo").addEventListener("click", function () {
+      document.getElementById("logoPopup").style.display = "block";
+    });
+
+    // Close popup on outside click
+    window.onclick = function(event) {
+      const popup = document.getElementById("logoPopup");
+      if (event.target == popup) {
+        popup.style.display = "none";
+      }
+    }
+
+    window.onload = () => {
+      showSection("home");
     }
   </script>
 </body>
